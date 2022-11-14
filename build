@@ -1,5 +1,5 @@
 #!/bin/bash
-# Linux Live Kit version 7
+# Cubuntu Builder 3.58
 
 export PATH=.:./tools:../tools:/usr/sbin:/usr/bin:/sbin:/bin:/
 
@@ -32,7 +32,7 @@ fi
 
 # build initramfs image
 if [ "$SKIPINITRFS" = "" ]; then
-   echo "Building initramfs image..."
+   echo "Building ISO image..."
    cd initramfs
    INITRAMFS=$(./initramfs_create)
    cd ..
